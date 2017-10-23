@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
+import StateInput from '../StateInput/StateInput';
 
 class HelloWorld extends Component {
+
+    constructor(props) {
+        super(props)
+        
+        this.state = {
+            name: 'Edu',
+            txt: this.props.txt
+        }
+
+        
+    }
+
+
+
     render() {
         const style =  {
             color: '#ff0055',
@@ -11,7 +26,9 @@ class HelloWorld extends Component {
         return (
             <div className="h1">
                 { /* Comentario */ }
-                <h1 style={ style }>Hello World</h1>
+                <h1 style={ style }>{ this.state.txt }</h1>
+                <span>{this.state.name}</span>
+                <StateInput />
             </div>
         );
     }
