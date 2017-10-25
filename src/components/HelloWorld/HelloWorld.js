@@ -16,8 +16,6 @@ class HelloWorld extends Component {
         
     }
 
-
-
     render() {
         const style =  {
             color: '#ff0055',
