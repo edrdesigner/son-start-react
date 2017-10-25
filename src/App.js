@@ -4,7 +4,7 @@ import './App.css';
 import HelloWorld from './components/HelloWorld/HelloWorld';
 import PropsValidation from './components/PropsValidation/PropsValidation';
 import Events from './components/Events/Events';
-
+import Translate from './components/Translate/Translate';
 
 class App extends Component {
   render() {
@@ -15,7 +15,8 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-         <Events />
+        <Translate />
+         {/* <Events /> */}
          {/* <HelloWorld txt='Hello World'/> */}
          {/* <PropsValidation name="Edu" age="31" height="1.86" /> */}
           To get started, edit <code>src/App.js</code> and save to reload.
