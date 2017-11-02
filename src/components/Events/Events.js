@@ -25,6 +25,10 @@ class Events extends Component {
         })
     }
 
+    /**
+     * 
+     * @param {*object} item 
+     */
     deleteEvent(item) {
         const newState = this.state.data;
 
@@ -50,7 +54,8 @@ class Events extends Component {
 
         return (
             <div>
-                 <input type="text" name="name" value={ this.state.name } onChange={ this.updateInputName} />
+                 <p>Novo Nome: {this.state.name}</p>
+                 <input type="text" name="name" value={this.state.name} onChange={this.updateInputName} />
                  <button type="button" onClick={ this.clickEvent} >Submit</button>
                  {/* <h2>{ this.state.name }</h2> */}
 
